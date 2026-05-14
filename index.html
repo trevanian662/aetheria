@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>AETHERIA - EPIC RPG</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0f172a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0f172a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+</head>
+<body>
+
+<!-- LOGIN / REGISTER SCREEN -->
+<div class="entry-screen" id="entryScreen">
+    <div class="entry-box">
+        <h1 class="game-title">🏰 AETHERIA ⚔️</h1>
+        <p class="game-subtitle">Enter the epic world</p>
+        <div class="auth-tabs">
+            <button id="loginTabBtn" class="active">🔐 LOGIN</button>
+            <button id="registerTabBtn">📝 REGISTER</button>
+        </div>
+        <div id="loginPanel" class="auth-panel">
+            <input type="email" id="loginEmail" placeholder="Email">
+            <input type="password" id="loginPassword" placeholder="Password">
+            <button id="doLoginBtn">✅ LOGIN</button>
+            <button id="googleLoginBtn" class="google-btn">🔵 SIGN IN WITH GOOGLE</button>
+        </div>
+        <div id="registerPanel" class="auth-panel" style="display:none">
+            <input type="text" id="regUsername" placeholder="Hero Name">
+            <input type="email" id="regEmail" placeholder="Email">
+            <input type="password" id="regPassword" placeholder="Password">
+            <button id="doRegisterBtn">📝 REGISTER</button>
+        </div>
+    </div>
+</div>
+
+<!-- MAIN GAME SCREEN -->
+<div class="game-screen" id="gameScreen" style="display:none">
+    <div class="container">
+        <!-- LEFT: GAME AREA -->
+        <div class="game-area">
+            <h1>🏰 AETHERIA ⚔️</h1>
+            <div id="playerStats">
+                <div>⭐ LVL: <span id="playerLevel">1</span></div>
+                <div>⚡ AP: <span id="playerAp">0</span></div>
+                <div>❤️ HP: <span id="playerHp">5000</span></div>
+                <div>💥 DMG: <span id="playerDmg">550</span></div>
+                <div>💰 GOLD: <span id="playerGold">10000</span></div>
+                <div>💎 DIA: <span id="playerDia">0</span></div>
+                <div>👑 VIP: <span id="playerVip">0</span></div>
+            </div>
+            <div class="inventory"><h3>🎒 INVENTORY</h3><div id="invList"></div></div>
+            <div class="gift-box" id="giftBox" style="display:none"><h3>🎁 LVL 10 REWARD</h3><button id="claimVipBtn">📦 OPEN VIP GIFT</button></div>
+            <div class="enemy-map"><h3>🗺️ ENEMY MAP</h3><div id="enemyMap"></div></div>
+            <div class="combat"><div id="heroCombat">⚔️ HERO</div><div id="enemyCombat">👹 ENEMY</div><div id="battleType">⚔️ BATTLE ⚔️</div><button id="attackBtn">⚔️ ATTACK</button><div id="combatLog"></div></div>
+        </div>
+        
+        <!-- RIGHT: PANELS -->
+         <div id="setBonusPanel"></div>
+        <div class="right-panel">
+            <div id="eventPanel"></div>
+            <div id="questLinePanel"></div>
+            <div id="seasonPanel"></div>
+            <div id="dailyLoginPanel"></div>
+            <div id="tournamentPanel"></div>
+            <div id="globalChat"></div>
+            <div id="guildChat"></div>
+            <div id="friendPanel"></div>
+            <div id="achievementPanel"></div>
+            <div id="dailyQuestsPanel"></div>
+            <div id="leaderboardPanel"></div>
+            <div id="worldBossPanel"></div>
+            <div id="pvpPanel"></div>
+            <div id="guildPanel"></div>
+            <div id="mailPanel"></div>
+            <h3>🛒 PREMIUM SHOP</h3>
+            <div id="shopList"></div>
+        </div>
+    </div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
