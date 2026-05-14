@@ -1,7 +1,7 @@
 {
     "name": "Aetheria RPG",
     "short_name": "Aetheria",
-    "description": "Epic Turn-Based RPG Game",
+    "description": "Aetheria RPG - Epic Turn-Based Game",
     "start_url": "index.html",
     "display": "standalone",
     "theme_color": "#0f172a",
