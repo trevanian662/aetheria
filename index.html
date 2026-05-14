@@ -95,3 +95,15 @@
 <script src="game.js"></script>
 </body>
 </html>
+// Otomatik demo hesap (offline test için)
+if(!localStorage.getItem("aetheria_users")) {
+    let demoUser = {
+        "demo@aetheria.com": {
+            id: "demo123",
+            name: "DemoHero",
+            password: "demo123",
+            gameData: { level: 1, exp: 0, gold: 10000, diamond: 0, vip: 0, inventory: [], equipment: {}, guild: null, firstPurchase: false, level10GiftClaimed: false, pvp: { score: 0, rank: "Mortal", wins: 0, losses: 0, dailyMatches: 0, lastReset: Date.now() } }
+        }
+    };
+    localStorage.setItem("aetheria_users", JSON.stringify(demoUser));
+}
